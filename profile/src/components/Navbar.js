@@ -6,7 +6,7 @@ import { Reorder } from '@material-ui/icons';
 
 const Navbar = () => {
 
-  const [showLinks, setShowLinks] = useState(true)
+  const [showLinks, setShowLinks] = useState(false)
 
   return (
     <div className='navbar'>
@@ -21,7 +21,7 @@ const Navbar = () => {
                 <a href='publication'>Publication</a>
             </div>
             <button onClick={() => setShowLinks(!showLinks)}>
-              Open
+              <Reorder />
             </button>
         </div>
     </div>

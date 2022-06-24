@@ -10,8 +10,10 @@ a{
 }
 
 a:hover{
-  color: yellow;
+  color: red;
 }
+
+/* navbar */
 
 .navbar .rightSide button{
   display: none;
@@ -44,12 +46,12 @@ a:hover{
 }
 
 .navbar .rightSide .links{
-  margin-left: 250px;
+  margin-left: 350px;
 }
 
 .navbar .rightSide .links a{
   margin-left: 20px;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .profileIcon{
@@ -59,26 +61,68 @@ a:hover{
   align-items: center;
 }
 
-@media only screen and (max-width:1000px) {
+/* homepage */
+.section {
+  height: 700px;
+  background-color:rgb(255, 255, 255);
+  border: 1px solid black
+}
+
+.main{
+  background-image: url('../../design/bgImage/bg.png');
+  background-repeat: no-repeat;
+
+  background-size: 100% 100%;
+  height: 100vh;
+  position: relative;
+}
+
+footer{
+  color: wheat;
+  background-color: rgb(10, 10, 10);
+  height: 300px;
+}
+
+.detel {
+
+  position: absolute;
+  bottom: 150px;
+  right: 50px;
+}
+
+.detel h1{
+  font-size: 50px;
+  color: #212121;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.733);
+}
+
+span{
+  color: orange;
+}
+
+.detel h3{
+  color: rgba(255, 255, 255, 0.733);
+  line-height: 22px;
+}
+
+/* homepage */
+
+@media only screen and (max-width:1400px) {
   .navbar .rightSide .links{
-    margin-left: 130px;
-  }
-  
-  .navbar .rightSide .links a{
-    margin-left: 17px;
-    font-size: 17px;
+    margin-left: 220px;
   }
   
 }
 
-@media only screen and (max-width:900px) {
+@media only screen and (max-width:1200px) {
   .navbar .rightSide .links{
-    margin-left: 100px;
+    margin-left: 150px;
   }
   
   .navbar .rightSide .links a{
-    margin-left: 15px;
-    font-size: 15px;
+    margin-left: 18px;
+    font-size: 18px;
   }
   
   .profileIcon{
@@ -88,14 +132,14 @@ a:hover{
   
 }
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:1000px) {
   .navbar .rightSide .links{
-    margin-left: 70px;
+    margin-left: 100px;
   }
   
   .navbar .rightSide .links a{
-    margin-left: 13px;
-    font-size: 14px;
+    margin-left: 15px;
+    font-size: 15px;
   }
   .profileIcon{
     height: 45px;
@@ -103,20 +147,21 @@ a:hover{
   }
 }
 
-@media only screen and (max-width:700px) {
-  .navbar .rightSide .links a{
+@media only screen and (max-width:800px) {
+  .navbar .rightSide .links {
     display: none;
   }
 
   .navbar .rightSide button{
     display: flex;
+    margin-left: 150px;
   }
 
   .navbar .rightSide #hidden {
     position: absolute;
     right: 0;
     top: 60px;
-    height: 220px;
+    height: 200px;
     width: 100%;
     background-color: #021E39;
     display: flex;
@@ -125,8 +170,9 @@ a:hover{
     text-align: center;
   }
 
-  .navbar .rightSide .links #hidden a{
-    display: flex
+  .navbar .rightSide #hidden a{
+    margin: 10px;
+    font-size: 15px;
   }
 }
 
